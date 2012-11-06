@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php 
 
 /**
  * TYPOlight webCMS
@@ -32,4 +32,3 @@ $GLOBALS['TL_LANG']['tl_proxy']['error_url'] = '"%s" は不正なURLです。';
 $GLOBALS['TL_LANG']['tl_proxy']['error_scheme'] = '"%s" というスキーマはサポートしていません。';
 $GLOBALS['TL_LANG']['tl_proxy']['error_local'] = 'プロキシーの例外にある "%s" は不正なパラメータです。';
 
-?>
