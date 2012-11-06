@@ -254,7 +254,7 @@ class ProxyRequest
     	// Add the user-agent header
 		if (! isset($this->arrHeaders['User-Agent']))
 		{
-			$this->arrHeaders['User-Agent'] = 'TYPOlight (+http://www.typolight.org/)';
+			$this->arrHeaders['User-Agent'] = 'Contao (+http://www.contao.org/)';
     	}
 
 		// Connect to host through proxy or direct
@@ -286,7 +286,8 @@ class ProxyRequest
 					$this->strError = $e->getMessage();
 				}
 			}
-		} else
+		} 
+		else
 		{
 			$this->connect($host, $port, $secure);
 		}
@@ -426,7 +427,8 @@ class ProxyRequest
 		if ($secure)
 		{
 			$this->socket = @fsockopen('ssl://'.$host, $port, $errno, $errstr, 20);
-		} else
+		} 
+		else
 		{
 			$this->socket = @fsockopen($host, $port, $errno, $errstr, 15);
 		}
@@ -454,7 +456,8 @@ class ProxyRequest
     	}
     	
 		// If the proxy-authorization header is set, send it to proxy but remove it from headers sent to target host
-		if (isset($this->arrHeaders['Proxy-Authorization'])) {
+		if (isset($this->arrHeaders['Proxy-Authorization'])) 
+		{
     	    $request .= "Proxy-Authorization: " . $this->arrHeaders['Proxy-Authorization'] . "\r\n";
     	    unset($this->arrHeaders['Proxy-Authorization']);
     	}
@@ -472,26 +475,27 @@ class ProxyRequest
         while ($line = @fgets($this->socket))
 		{
 			$gotStatus = $gotStatus || (strpos($line, 'HTTP') !== false);
-			if ($gotStatus) {
+			if ($gotStatus) 
+			{
 				$response .= $line;
 				if (!chop($line)) break;
 			}
 		}
 
 		// Check that the response from the proxy is 200
-		if (substr($response, 9, 3) != 200) {
+		if (substr($response, 9, 3) != 200) 
+		{
 			throw new Exception("Unable to connect to HTTPS proxy. Server response: " . $response);
 		}
 
 		// If all is good, switch socket to secure mode. We have to fall back
 		// through the different modes 
-		$modes = array
-		(
-			STREAM_CRYPTO_METHOD_TLS_CLIENT, 
-			STREAM_CRYPTO_METHOD_SSLv3_CLIENT,
-			STREAM_CRYPTO_METHOD_SSLv23_CLIENT,
-			STREAM_CRYPTO_METHOD_SSLv2_CLIENT 
-		);
+		$modes = array(
+					STREAM_CRYPTO_METHOD_TLS_CLIENT, 
+					STREAM_CRYPTO_METHOD_SSLv3_CLIENT,
+					STREAM_CRYPTO_METHOD_SSLv23_CLIENT,
+					STREAM_CRYPTO_METHOD_SSLv2_CLIENT 
+					);
 
 		$success = false; 
 		foreach($modes as $mode)

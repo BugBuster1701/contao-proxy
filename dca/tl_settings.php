@@ -19,8 +19,8 @@
  * Software Foundation website at http://www.gnu.org/licenses/.
  *
  * PHP version 5
- * @copyright  Jörg Kleuver 2008
- * @author     Jörg Kleuver <joerg@kleuver.de>
+ * @copyright  JÃ¶rg Kleuver 2008
+ * @author     JÃ¶rg Kleuver <joerg@kleuver.de>
  * @package    Proxy
  * @license    LGPL
  */
@@ -29,19 +29,17 @@
  * Add to palette
  */
 $GLOBALS['TL_DCA']['tl_settings']['palettes']['__selector__'][] = 'useProxy';
-//$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = str_replace('useSMTP;', 'useSMTP;{proxy_legend:hide},useProxy;', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
 $GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] .= ';{proxy_legend:hide},useProxy;';
-
 
 /**
  * Add to subpalette
  */
 $GLOBALS['TL_DCA']['tl_settings']['subpalettes']['useProxy'] = 'proxy_url,proxy_local';
 
+
 /**
  * Add fields
  */
-
 $GLOBALS['TL_DCA']['tl_settings']['fields']['useProxy'] = array
 (
 	'label'         => &$GLOBALS['TL_LANG']['tl_settings']['useProxy'],
@@ -59,7 +57,8 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_url'] = array
 	'eval'          => array('mandatory'=>true, 'maxlength'=>255, 'nospace'=>true, 'rgxp'=>'url')
 );
 
-$GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_local'] = array(
+$GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_local'] = array
+(
 	'label'         => &$GLOBALS['TL_LANG']['tl_settings']['proxy_local'],
 	'default'       => '',
 	'exclude'       => true,
@@ -72,8 +71,8 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_local'] = array(
  * Class tl_proxy
  *
  * Provide miscellaneous methods that are used by the data configuration array.
- * @copyright  Jörg Kleuver 2008
- * @author     Jörg Kleuver <joerg@kleuver.de>
+ * @copyright  JÃ¶rg Kleuver 2008
+ * @author     JÃ¶rg Kleuver <joerg@kleuver.de>
  */
 class tl_proxy extends Backend
 {

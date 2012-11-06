@@ -16,13 +16,12 @@ class Proxy
 	 * Proxy settings
 	 * @var array
 	 */
-	protected $arrProxy = array
-	(
-		'proxy_host'    => '',
-		'proxy_port'    => 8080,
-		'proxy_user'    => '',
-		'proxy_pass'    => ''
-	);
+	protected $arrProxy = array(
+							'proxy_host'    => '',
+							'proxy_port'    => 8080,
+							'proxy_user'    => '',
+							'proxy_pass'    => ''
+							);
 
 	/**
 	 * Local settings
@@ -53,11 +52,11 @@ class Proxy
 		switch ($strKey)
 		{
 			case 'proxy':
-				$this->setProxy($strValue);
+				$this->setProxy($varValue);
 				break;
 
 			case 'local':
-				$this->setLocal($strValue);
+				$this->setLocal($varValue);
 				break;
 
 			case 'host':
@@ -205,11 +204,11 @@ class Proxy
 			}
 
 			$this->arrProxy = array(
-				'proxy_host'  => $proxy_uri['host'],
-				'proxy_port'  => $proxy_uri['port'],
-				'proxy_user'  => $proxy_uri['user'],
-				'proxy_pass'  => $proxy_uri['pass']
-			);
+								'proxy_host'  => $proxy_uri['host'],
+								'proxy_port'  => $proxy_uri['port'],
+								'proxy_user'  => $proxy_uri['user'],
+								'proxy_pass'  => $proxy_uri['pass']
+								);
 
 			return true;
 		}
@@ -267,7 +266,8 @@ class Proxy
 			if((strlen($TLD) < 2) || (strlen($ccTLD) < 2)) return false;
 
 			return 'domain-name';
-		} else if (substr($strHost, -1) == '.')
+		} 
+		else if (substr($strHost, -1) == '.')
 		{
 			if(count($strSlices) < 1) return false;
 			if(preg_match("/[^0-9\.]/i", $strHost)) return false;
@@ -284,7 +284,8 @@ class Proxy
 		if ((ip2long($strHost)) === false)
 		{
 			return 'host-name';
-		} else
+		} 
+		else
 		{
 			return 'ip-address';
 		}

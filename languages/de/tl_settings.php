@@ -22,14 +22,14 @@
  * Fields
  */
 $GLOBALS['TL_LANG']['tl_settings']['proxy_legend'] = "Proxy-Einstellungen";
-$GLOBALS['TL_LANG']['tl_settings']['useProxy'] = array('Proxy für Webzugriffe verwenden', 'Wenn kein Direkter Zugriff auf das Internet vorhanden ist, können Sie einen Proxy angeben.');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_url'] = array('URL des Proxy Servers', 'Beispiel: "http://[user:passwort@]host[:port]" ...');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_local'] = array('kein Proxy für', 'Beispiel: "localhost, 127.0.0.1, .example.com, 192.168." ...');
+$GLOBALS['TL_LANG']['tl_settings']['useProxy']     = array('Proxy für Webzugriffe verwenden', 'Wenn kein direkter Zugriff auf das Internet vorhanden ist, können Sie einen Proxy angeben.');
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url']    = array('URL des Proxy Servers', 'Beispiel: "http://[user:passwort@]host[:port]" ...');
+$GLOBALS['TL_LANG']['tl_settings']['proxy_local']  = array('kein Proxy für', 'Beispiel: "localhost, 127.0.0.1, .example.com, 192.168." ...');
 
 /**
  * Error messages
  */
-$GLOBALS['TL_LANG']['tl_proxy']['error_url'] = 'Ungültiger Eintrag in URL "%s".';
+$GLOBALS['TL_LANG']['tl_proxy']['error_url']    = 'Ungültiger Eintrag in URL "%s".';
 $GLOBALS['TL_LANG']['tl_proxy']['error_scheme'] = 'Schema "%s" wird nicht unterstützt.';
-$GLOBALS['TL_LANG']['tl_proxy']['error_local'] = 'Ungültiger Eintrag "%s" in den Proxy Ausnahmen.';
+$GLOBALS['TL_LANG']['tl_proxy']['error_local']  = 'Ungültiger Eintrag "%s" in den Proxy Ausnahmen.';
 
