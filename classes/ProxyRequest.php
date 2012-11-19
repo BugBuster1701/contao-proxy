@@ -254,7 +254,7 @@ class ProxyRequest
     	// Add the user-agent header
 		if (! isset($this->arrHeaders['User-Agent']))
 		{
-			$this->arrHeaders['User-Agent'] = 'Contao (+http://www.contao.org/)';
+			$this->arrHeaders['User-Agent'] = 'Contao (+http://contao.org/)';
     	}
 
 		// Connect to host through proxy or direct
