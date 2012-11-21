@@ -1,29 +1,23 @@
 <?php 
 
 /**
- * TYPOlight webCMS
- * Copyright (C) 2005 Leo Feyer
+ * Contao Open Source CMS
+ * Copyright (C) 2005-2012 Leo Feyer
  *
- * This program is free software: you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation, either
- * version 2.1 of the License, or (at your option) any later version.
+ * Formerly known as TYPOlight Open Source CMS.
  * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * Lesser General Public License for more details.
+ * Proxy Module
  * 
- * You should have received a copy of the GNU Lesser General Public
- * License along with this program. If not, please visit the Free
- * Software Foundation website at http://www.gnu.org/licenses/.
- *
  * PHP version 5
- * @copyright  Jörg Kleuver 2008
+ * @copyright  Jörg Kleuver 2008, TYPOlight Version
  * @author     Jörg Kleuver <joerg@kleuver.de>
- * @package    Proxy
- * @license    LGPL
+ *
+ * @copyright  Glen Langer 2012
+ * @author     Glen Langer (BugBuster); for Contao 3
+ * @package    Proxy 
+ * @license    LGPL 
  */
+
 
 /**
  * Add to palette

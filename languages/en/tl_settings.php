@@ -1,21 +1,21 @@
 <?php 
 
 /**
- * TYPOlight webCMS
+ * Contao Open Source CMS
+ * Copyright (C) 2005-2012 Leo Feyer
  *
- * The TYPOlight webCMS is an accessible web content management system that 
- * specializes in accessibility and generates W3C-compliant HTML code. It 
- * provides a wide range of functionality to develop professional websites 
- * including a built-in search engine, form generator, file and user manager, 
- * CSS engine, multi-language support and many more. For more information and 
- * additional TYPOlight applications like the TYPOlight MVC Framework please 
- * visit the project website http://www.typolight.org.
- *
+ * Formerly known as TYPOlight Open Source CMS.
+ * 
+ * Proxy Module
+ * 
  * PHP version 5
- * @copyright  Jörg Kleuver 2008
+ * @copyright  Jörg Kleuver 2008, TYPOlight Version
  * @author     Jörg Kleuver <joerg@kleuver.de>
- * @package    Proxy
- * @license    LGPL
+ *
+ * @copyright  Glen Langer 2012
+ * @author     Glen Langer (BugBuster); for Contao 3
+ * @package    Proxy 
+ * @license    LGPL 
  */
 
 /**

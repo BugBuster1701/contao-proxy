@@ -1,11 +1,33 @@
 <?php 
 
 /**
+ * Contao Open Source CMS
+ * Copyright (C) 2005-2012 Leo Feyer
+ *
+ * Formerly known as TYPOlight Open Source CMS.
+ * 
+ * Proxy Module
+ * 
+ * PHP version 5
+ * @copyright  Jörg Kleuver 2008, TYPOlight Version
+ * @author     Jörg Kleuver <joerg@kleuver.de>
+ *
+ * @copyright  Glen Langer 2012
+ * @author     Glen Langer (BugBuster); for Contao 3
+ * @package    Proxy 
+ * @license    LGPL 
+ */
+
+/**
  * Class Proxy
  *
  * Provide methods to handle HTTP Proxy informations.
- * @copyright  Jörg Kleuver 2008
+ * @copyright  Jörg Kleuver 2008, TYPOlight Version
  * @author     Jörg Kleuver <joerg@kleuver.de>
+ *
+ * @copyright  Glen Langer 2012
+ * @author     Glen Langer (BugBuster); for Contao 3
+ * @version    3.0.0
  * @package    Proxy
  * @license    LGPL
 */
