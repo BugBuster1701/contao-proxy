@@ -23,14 +23,17 @@ etc.
 
 ### Using
 
-In the backend, in System - Settings, there is now the new section "Proxy Settings". When the extension catalog and installation works, the
-module should be installed again over the extension catalog. So updates are displayed in the extension manager, if there is one.
+In the backend, in System - Settings, there is now the new section  "Proxy
+configuration (outgoing connections)".  When the extension catalog and
+installation works, the module should be  installed again over the extension
+catalog. So updates are displayed in  the extension manager, if there is one.
 
 
 Beschreibung
 ------------
 
-Keine offizielle Übernahme! Ich habe das Modul für Contao 3.0 angepasst, um weiter damit arbeiten zu können.
+Keine offizielle Übernahme! Ich habe das Modul für Contao 3.0 angepasst, um
+weiter damit arbeiten zu können.
 
 ### Installation
 
@@ -47,7 +50,9 @@ usw.
 
 ### Nutzung
 
-Im Backend unter System - Einstellungen ist der Abschnitt "Proxy-Einstellungen" zu finden.
+Im Backend unter System - Einstellungen ist der Abschnitt "Proxy-Einstellungen
+(abgehende Verbindungen)" zu finden.
 
-Sobald damit der Erweiterungskatalog und die Installation funktioniert, sollte das Modul Proxy nochmal über den Erweiterungskatalog installiert
-werden. Damit werden Updates in der Verwaltung angezeigt, sofern welche vorhanden sind.
+Sobald damit der Erweiterungskatalog und die Installation funktioniert, sollte
+das Modul Proxy nochmal über den Erweiterungskatalog installiert werden. 
+Damit werden Updates in der Verwaltung angezeigt, sofern welche vorhanden sind.
