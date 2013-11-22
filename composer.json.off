@@ -1,0 +1,39 @@
+{
+	"name":"bugbuster/contao-proxy",
+	"description":"Contao module. Proxy support for the extension catalog and the extension manager",
+	"keywords":["contao","proxy"],
+	"type":"contao-module",
+	"homepage":"http://www.contao.glen-langer.de",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Glen Langer",
+			"homepage":"http://www.contao.glen-langer.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"issues":"https://github.com/BugBuster1701/privat-proxy/issues",
+		"irc":"irc://irc.freenode.org/contao.dev",
+		"source":"https://github.com/BugBuster1701/privat-proxy",
+		"forum":"https://community.contao.org/de/forumdisplay.php?119-Sonstige-Erweiterungen"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":">=3.2,<4",
+		"contao-community-alliance/composer-installer":"*"
+	},
+	"autoload":{
+		"classmap":[""]
+	},
+	"replace":{
+		"contao-legacy/proxy":"*"
+	},
+	"extra":{
+		"contao":{
+			"sources":{
+				"":"system/modules/proxy"
+			}
+		}
+	}
+}
