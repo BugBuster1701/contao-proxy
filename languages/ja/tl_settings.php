@@ -16,8 +16,9 @@
 /**
  * Fields
  */
+$GLOBALS['TL_LANG']['tl_settings']['proxy_out_legend'] = "Proxy configuration (outgoing connections)";
 $GLOBALS['TL_LANG']['tl_settings']['useProxy'] = array('インターネットのアクセスにプロキシーを使用', 'インターネットに直接接続していない場合に、プロキシーを指定できます。');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_url'] = array('プロキシー・サーバのURL', '例: "http://[user:passwort@]host[:port]" ...');
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url'] = array('プロキシー・サーバのURL', '例: "http://[user:password@]host[:port]" ...');
 $GLOBALS['TL_LANG']['tl_settings']['proxy_local'] = array('プロキシーの例外', '例: "localhost, 127.0.0.1, .example.com, 192.168." ...');
 
 /**

@@ -12,7 +12,7 @@
  * @copyright  Jörg Kleuver 2008, TYPOlight Version
  * @author     Jörg Kleuver <joerg@kleuver.de>
  *
- * @copyright  Glen Langer 2012
+ * @copyright  Glen Langer 2012..2013
  * @author     Glen Langer (BugBuster); for Contao 3
  * @package    Proxy 
  * @license    LGPL 
@@ -23,7 +23,7 @@
  * Add to palette
  */
 $GLOBALS['TL_DCA']['tl_settings']['palettes']['__selector__'][] = 'useProxy';
-$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] .= ';{proxy_legend:hide},useProxy;';
+$GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] .= ';{proxy_out_legend:hide},useProxy;';
 
 /**
  * Add to subpalette
@@ -67,6 +67,8 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_local'] = array
  * Provide miscellaneous methods that are used by the data configuration array.
  * @copyright  Jörg Kleuver 2008
  * @author     Jörg Kleuver <joerg@kleuver.de>
+ * @copyright  Glen Langer 2012..2013
+ * @author     Glen Langer (BugBuster); for Contao 3
  */
 class tl_proxy extends Backend
 {

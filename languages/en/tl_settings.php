@@ -21,9 +21,9 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_settings']['proxy_legend'] = "Proxy configuration";
+$GLOBALS['TL_LANG']['tl_settings']['proxy_out_legend'] = "Proxy configuration (outgoing connections)";
 $GLOBALS['TL_LANG']['tl_settings']['useProxy']     = array('Use Proxy to access the Internet', 'If no direct connetion to the internet is possible, you can define a proxy.');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_url']    = array('URL of Proxy Server', 'Example: "http://[user:passwort@]host[:port]" ...');
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url']    = array('URL of Proxy Server', 'Example: "http://[user:password@]host[:port]" ...');
 $GLOBALS['TL_LANG']['tl_settings']['proxy_local']  = array('No Proxy for', 'Example: "localhost, 127.0.0.1, .example.com, 192.168." ...');
 
 /**
