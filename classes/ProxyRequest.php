@@ -342,7 +342,7 @@ class ProxyRequest
 
 		$this->arrResponseHeaders = array();
 		list($protocol, $code, $text) = explode(' ', trim(array_shift($split)), 3);
-
+        unset($protocol);
 		while (($line = trim(array_shift($split))) != false)
 		{
 			list($header, $value) = explode(':', $line, 2);
