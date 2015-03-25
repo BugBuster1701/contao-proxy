@@ -1,30 +1,25 @@
-<?php 
-
+<?php
 /**
- * Contao Open Source CMS
- * Copyright (C) 2005-2012 Leo Feyer
+ * Translations are managed using Transifex. To create a new translation
+ * or to help to maintain an existing one, please register at transifex.com.
  *
- * Formerly known as TYPOlight Open Source CMS.
+ * @link http://help.transifex.com/intro/translating.html
+ * @link https://www.transifex.com/projects/p/contao-proxy/language/ja/
  *
- * PHP version 5
- * @copyright  Takahiro Kambe 2008
- * @author     Takahiro Kambe <taca@back-street.net>
- * @package    Proxy
- * @license    LGPL
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ *
+ * last-updated: 2015-03-25T18:26:42+01:00
  */
 
-/**
- * Fields
- */
-$GLOBALS['TL_LANG']['tl_settings']['proxy_out_legend'] = "Proxy configuration (outgoing connections)";
-$GLOBALS['TL_LANG']['tl_settings']['useProxy'] = array('インターネットのアクセスにプロキシーを使用', 'インターネットに直接接続していない場合に、プロキシーを指定できます。');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_url'] = array('プロキシー・サーバのURL', '例: "http://[user:password@]host[:port]" ...');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_local'] = array('プロキシーの例外', '例: "localhost, 127.0.0.1, .example.com, 192.168." ...');
 
-/**
- * Error messages
- */
-$GLOBALS['TL_LANG']['tl_proxy']['error_url'] = '"%s" は不正なURLです。';
-$GLOBALS['TL_LANG']['tl_proxy']['error_scheme'] = '"%s" というスキーマはサポートしていません。';
-$GLOBALS['TL_LANG']['tl_proxy']['error_local'] = 'プロキシーの例外にある "%s" は不正なパラメータです。';
+$GLOBALS['TL_LANG']['tl_proxy']['error_local']         = 'プロキシーの例外にある "%s" は不正なパラメータです。';
+$GLOBALS['TL_LANG']['tl_proxy']['error_scheme']        = '"%s" というスキーマはサポートしていません。';
+$GLOBALS['TL_LANG']['tl_proxy']['error_url']           = '"%s" は不正なURLです。';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_local']['0'] = 'プロキシーの例外';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_local']['1'] = '例: "localhost, 127.0.0.1, .example.com, 192.168." ...';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_out_legend'] = 'Proxy configuration (outgoing connections)';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url']['0']   = 'プロキシー・サーバのURL';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url']['1']   = '例: "http://[user:password@]host[:port]" ...';
+$GLOBALS['TL_LANG']['tl_settings']['useProxy']['0']    = 'インターネットのアクセスにプロキシーを使用';
+$GLOBALS['TL_LANG']['tl_settings']['useProxy']['1']    = 'インターネットに直接接続していない場合に、プロキシーを指定できます。';
 
