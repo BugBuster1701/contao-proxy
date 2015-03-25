@@ -275,7 +275,7 @@ class ProxyRequest
 			if ($uri['scheme'] == 'https') {
 				try 
 				{
-					@$this->connectHandshake($host, $port);
+					$this->connectHandshake($host, $port);
 				}
 				catch (Exception $e)
 				{
