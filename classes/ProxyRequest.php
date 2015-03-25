@@ -330,7 +330,7 @@ class ProxyRequest
 		fwrite($this->socket, $request);
 
 		$response = '';
-		while (!feof($this->socket) && ($chunk = fread($this->socket, 1024)) != false)
+		while (!feof($this->socket) && ($chunk = fread($this->socket, 1024)) !== false) //#5
 		{
 			$response .= $chunk;
 		}
