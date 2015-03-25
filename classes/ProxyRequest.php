@@ -213,9 +213,7 @@ class ProxyRequest
 	 */
 	public function send($strUrl, $strData=false, $strMethod=false)
 	{
-		$default = array
-		(
-		);
+		$default = array();
 
 		if ($strData)
 		{
@@ -300,7 +298,8 @@ class ProxyRequest
 		if ($this->resProxy && $uri['scheme'] != 'https')
 		{
 			$request = "{$this->strMethod} {$strUrl} HTTP/1.0\r\n";
-		} else
+		} 
+		else
 		{
 			$path = isset($uri['path']) ? $uri['path'] : '/';
 			if (isset($uri['query']))
