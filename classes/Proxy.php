@@ -222,7 +222,6 @@ class Proxy
 			if ($proxy_uri['scheme'] != 'http')
 			{
 				throw new Exception(sprintf($GLOBALS['TL_LANG']['tl_proxy']['error_scheme'], $proxy_uri['scheme']));
-				return false;
 			}
 
 			$this->arrProxy = array(
