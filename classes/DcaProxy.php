@@ -45,7 +45,7 @@ class DcaProxy extends Backend
 		{
 			try 
 			{
-				@$this->resProxy = new Proxy($varValue);
+				$this->resProxy = new Proxy($varValue);
 			}
 			catch (Exception $e)
 			{
@@ -67,7 +67,7 @@ class DcaProxy extends Backend
 		{
 			try 
 			{
-				@$this->resProxy = new Proxy('', $varValue);
+				$this->resProxy = new Proxy('', $varValue);
 			}
 			catch (Exception $e)
 			{
