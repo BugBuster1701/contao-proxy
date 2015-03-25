@@ -47,7 +47,7 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_url'] = array
 	'default'       => '',
 	'exclude'       => true,
 	'inputType'     => 'text',
-	'save_callback' => array( array('DCA_proxy', 'checkProxyUrl') ),
+	'save_callback' => array( array('DcaProxy', 'checkProxyUrl') ),
 	'eval'          => array('mandatory'=>true, 'maxlength'=>255, 'nospace'=>true, 'rgxp'=>'url')
 );
 
@@ -57,6 +57,6 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['proxy_local'] = array
 	'default'       => '',
 	'exclude'       => true,
 	'inputType'     => 'text',
-	'save_callback' => array( array('DCA_proxy', 'checkProxyLocal') ),
+	'save_callback' => array( array('DcaProxy', 'checkProxyLocal') ),
 	'eval'          => array('maxlength'=>255)
 );

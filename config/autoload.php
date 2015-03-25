@@ -19,5 +19,5 @@ ClassLoader::addClasses(array
 	// Classes
 	'ProxyRequest' => 'system/modules/proxy/classes/ProxyRequest.php',
 	'Proxy'        => 'system/modules/proxy/classes/Proxy.php',
-	'DCA_proxy'    => 'system/modules/proxy/classes/DCA_proxy.php',
+	'DcaProxy'     => 'system/modules/proxy/classes/DcaProxy.php',
 ));
