@@ -19,13 +19,13 @@
  */
 
 /**
- * Class DCA_proxy
+ * Class DcaProxy
  *
  * Provide miscellaneous methods that are used by the data configuration array.
  * @copyright  Glen Langer 2012..2013
  * @author     Glen Langer (BugBuster)
  */
-class DCA_proxy extends Backend
+class DcaProxy extends Backend
 {
 
 	/**
@@ -45,7 +45,7 @@ class DCA_proxy extends Backend
 		{
 			try 
 			{
-				@$this->resProxy = new Proxy($varValue);
+				$this->resProxy = new Proxy($varValue);
 			}
 			catch (Exception $e)
 			{
@@ -67,7 +67,7 @@ class DCA_proxy extends Backend
 		{
 			try 
 			{
-				@$this->resProxy = new Proxy('', $varValue);
+				$this->resProxy = new Proxy('', $varValue);
 			}
 			catch (Exception $e)
 			{

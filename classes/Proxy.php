@@ -145,25 +145,7 @@ class Proxy
 							case 'domain-name':
 								if ($this->inDomain($strHost, $local)) return true;
 								break;
-
-//							// Question: Do we rally want to check a host name against ip-adress or ip-range ?
-//							case 'ip-address':
-//					 			// do reverse lookup of $strHost and then check if ip-addresses match $local
-//								// Don't do a reverse lookup of an ip-address !
-//								foreach (gethostbynamel($strHost) as $ip)
-//								{
-//									if ($ip == $local) return true;
-//								}
-//								break;
-//
-//							case 'ip-range':
-//					 			// do reverse lookup of $strHost and then check if addresses is in ip-range of $local
-//								foreach (gethostbynamel($strHost) as $ip)
-//								{
-//									if ($this->inRange($ip, $local)) return true;
-//								}
-//								break;
-
+								
 							default:
 								break;
 						}
@@ -172,16 +154,6 @@ class Proxy
 					case 'ip-address':
 						switch ($this->hostType($local))
 						{
-//							// Question: Do we rally want to check an ip-address against a host name ?
-//							case 'host-name':
-//					 			// do reverse lookup of $local and then check if addresses match $strHost
-//								// Don't do a reverse lookup of an ip-address !
-//								foreach (gethostbynamel($local) as $ip)
-//								{
-//									if ($ip == $strHost) return true;
-//								}
-//								break;
-
 							case 'ip-address':
 								// should never reach this, already checked
 								if ($strHost == $local) return true;
@@ -222,7 +194,6 @@ class Proxy
 			if ($proxy_uri['scheme'] != 'http')
 			{
 				throw new Exception(sprintf($GLOBALS['TL_LANG']['tl_proxy']['error_scheme'], $proxy_uri['scheme']));
-				return false;
 			}
 
 			$this->arrProxy = array(

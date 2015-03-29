@@ -1,35 +1,25 @@
-<?php 
-
+<?php
 /**
- * Contao Open Source CMS
- * Copyright (C) 2005-2012 Leo Feyer
+ * Translations are managed using Transifex. To create a new translation
+ * or to help to maintain an existing one, please register at transifex.com.
  *
- * Formerly known as TYPOlight Open Source CMS.
- * 
- * Proxy Module
- * 
- * PHP version 5
- * @copyright  Jörg Kleuver 2008, TYPOlight Version
- * @author     Jörg Kleuver <joerg@kleuver.de>
+ * @link http://help.transifex.com/intro/translating.html
+ * @link https://www.transifex.com/projects/p/contao-proxy/language/en/
  *
- * @copyright  Glen Langer 2012
- * @author     Glen Langer (BugBuster); for Contao 3
- * @package    Proxy 
- * @license    LGPL 
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ *
+ * last-updated: 2015-03-25T18:26:42+01:00
  */
 
-/**
- * Fields
- */
-$GLOBALS['TL_LANG']['tl_settings']['proxy_out_legend'] = "Proxy configuration (outgoing connections)";
-$GLOBALS['TL_LANG']['tl_settings']['useProxy']     = array('Use Proxy to access the Internet', 'If no direct connetion to the internet is possible, you can define a proxy.');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_url']    = array('URL of Proxy Server', 'Example: "http://[user:password@]host[:port]" ...');
-$GLOBALS['TL_LANG']['tl_settings']['proxy_local']  = array('No Proxy for', 'Example: "localhost, 127.0.0.1, .example.com, 192.168." ...');
 
-/**
- * Error messages
- */
-$GLOBALS['TL_LANG']['tl_proxy']['error_url']    = 'Invalid argument in URL "%s".';
-$GLOBALS['TL_LANG']['tl_proxy']['error_scheme'] = 'Scheme "%s" not supported.';
-$GLOBALS['TL_LANG']['tl_proxy']['error_local']  = 'Invalid argument "%s" in Proxy exceptions.';
+$GLOBALS['TL_LANG']['tl_proxy']['error_local']         = 'Invalid argument "%s" in Proxy exceptions.';
+$GLOBALS['TL_LANG']['tl_proxy']['error_scheme']        = 'Scheme "%s" not supported.';
+$GLOBALS['TL_LANG']['tl_proxy']['error_url']           = 'Invalid argument in URL "%s".';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_local']['0'] = 'No Proxy for';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_local']['1'] = 'Example: "localhost, 127.0.0.1, .example.com, 192.168." ...';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_out_legend'] = 'Proxy configuration (outgoing connections)';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url']['0']   = 'URL of Proxy Server';
+$GLOBALS['TL_LANG']['tl_settings']['proxy_url']['1']   = 'Example: "http://[user:password@]host[:port]" ...';
+$GLOBALS['TL_LANG']['tl_settings']['useProxy']['0']    = 'Use Proxy to access the Internet';
+$GLOBALS['TL_LANG']['tl_settings']['useProxy']['1']    = 'If no direct connetion to the internet is possible, you can define a proxy.';
 

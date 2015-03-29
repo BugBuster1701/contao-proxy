@@ -213,9 +213,7 @@ class ProxyRequest
 	 */
 	public function send($strUrl, $strData=false, $strMethod=false)
 	{
-		$default = array
-		(
-		);
+		$default = array();
 
 		if ($strData)
 		{
@@ -275,7 +273,7 @@ class ProxyRequest
 			if ($uri['scheme'] == 'https') {
 				try 
 				{
-					@$this->connectHandshake($host, $port);
+					$this->connectHandshake($host, $port);
 				}
 				catch (Exception $e)
 				{
@@ -300,7 +298,8 @@ class ProxyRequest
 		if ($this->resProxy && $uri['scheme'] != 'https')
 		{
 			$request = "{$this->strMethod} {$strUrl} HTTP/1.0\r\n";
-		} else
+		} 
+		else
 		{
 			$path = isset($uri['path']) ? $uri['path'] : '/';
 			if (isset($uri['query']))
@@ -330,7 +329,7 @@ class ProxyRequest
 		fwrite($this->socket, $request);
 
 		$response = '';
-		while (!feof($this->socket) && ($chunk = fread($this->socket, 1024)) != false)
+		while (!feof($this->socket) && ($chunk = fread($this->socket, 1024)) !== false) //#5
 		{
 			$response .= $chunk;
 		}
@@ -342,7 +341,7 @@ class ProxyRequest
 
 		$this->arrResponseHeaders = array();
 		list($protocol, $code, $text) = explode(' ', trim(array_shift($split)), 3);
-
+        unset($protocol);
 		while (($line = trim(array_shift($split))) != false)
 		{
 			list($header, $value) = explode(':', $line, 2);
@@ -509,4 +508,3 @@ class ProxyRequest
 	}
 
 }
-	
