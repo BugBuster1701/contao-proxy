@@ -1,12 +1,15 @@
 Contao 3 Module: Proxy
 ======================
+[![Latest Stable Version](https://poser.pugx.org/bugbuster/contao-proxy/v/stable.svg)](https://packagist.org/packages/bugbuster/contao-proxy) [![Total Downloads](https://poser.pugx.org/bugbuster/contao-proxy/downloads.svg)](https://packagist.org/packages/bugbuster/contao-proxy) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/contao-proxy/v/unstable.svg)](https://packagist.org/packages/bugbuster/contao-proxy) [![License](https://poser.pugx.org/bugbuster/contao-proxy/license.svg)](https://packagist.org/packages/bugbuster/contao-proxy)
 
-Offline Fork from the old TYPOlight Module „Proxy“.
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/71a3f87d-bb25-44ed-a6a4-3f24de6bb844/small.png)](https://insight.sensiolabs.com/projects/71a3f87d-bb25-44ed-a6a4-3f24de6bb844)
+
+Fork from the old TYPOlight Module „Proxy“. Proxy for the backend extension catalog (ER2).
 
 Description
 -----------
 
-No official transfer! I have changed the Module for using with Contao 3.0.
+No official transfer! I have changed the Module for using with Contao 3.x
 
 ### Installation
 
@@ -32,12 +35,12 @@ catalog. So updates are displayed in  the extension manager, if there is one.
 Beschreibung
 ------------
 
-Keine offizielle Übernahme! Ich habe das Modul für Contao 3.0 angepasst, um
+Keine offizielle Übernahme! Ich habe das Modul für Contao 3.x angepasst, um
 weiter damit arbeiten zu können.
 
-### Installation
+### Manuelle Installation
 
--   Download ZIP Datei, oben auf dieser Seite ist dazu der Link zu finden
+-   Download ZIP Datei, oben auf dieser Seite über "releases"
 -   auf lokaler Festplatte auspacken
 -   auf dem Server im Verzeichnis `system/modules` ein neues Verzeichnis `proxy` anlegen
 -   in das Verzeichnis `system/modules/proxy` nun die Dateien und Verzeichnisse übertragen
