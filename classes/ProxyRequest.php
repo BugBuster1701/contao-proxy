@@ -493,7 +493,17 @@ class ProxyRequest
 					STREAM_CRYPTO_METHOD_SSLv23_CLIENT,
 					STREAM_CRYPTO_METHOD_SSLv2_CLIENT 
 					);
-
+        // With the release of PHP 5.6 there have been some changes in OpenSSL. 
+        // Stream wrappers now verify peer certificates and host names by default 
+        // when using SSL/TLS
+		$contextOptions = array(
+		    'ssl' => array(
+		        'verify_peer' => false,
+		        'verify_peer_name' => false,
+		    ),
+		);
+		stream_context_set_option($this->socket, $contextOptions );
+		
 		$success = false; 
 		foreach($modes as $mode)
 		{
