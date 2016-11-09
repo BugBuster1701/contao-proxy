@@ -218,9 +218,9 @@ class ProxyRequest
 		if ($strData)
 		{
 			$this->strData = $strData;
-			$default['Content-Length'] = 'Content-Length: '. strlen($this->strData);
 		}
-
+		$default['Content-Length'] = 'Content-Length: '. strlen($this->strData);
+		
 		if ($strMethod)
 		{
 			$this->strMethod = strtoupper($strMethod);
